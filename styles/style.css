@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  vertical-align: middle;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+header {
+  background-color: #2a8827;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.header__container {
+  width: 100%;
+  display: flex;
+}
+.logo {
+  margin: 0 0 0 1rem;
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.nav {
+  width: 60%;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__item {
+  margin: 0 0 0 1.5rem;
+}
+
+.nav__link {
+  color: #f7f8f8;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  opacity: 0.65;
+}
+
+.nav__image {
+  height: 8rem;
+}
+
+header h1 {
+  color: #f7f8f8;
+  margin: 0 0 0 1rem;
+}
+
+main {
+  background-color: #e4fde1;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.main__section {
+  background-color: #e4fde1;
+  flex-grow: 1;
+}
+
+/* con esto afectas a TODOS lo p
+  estas afectando tambien al que esta en el formulario
+  etnonces lo re estira
+  */
+/* .main__section p {
+  width: 1200px;
+} */
+.main__section--info p {
+  font-size: 1.1rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.main__section--info a {
+  font-size: 1.1rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.main__contact {
+  display: flex;
+  align-content: space-around;
+  column-gap: 12rem;
+}
+
+.main__localization p {
+  padding: 0.25rem 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+.main__localization a {
+  padding: 0.25rem 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0 1rem 0;
+}
+h3 {
+  font-size: 1.5rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.img__presentation {
+  width: 100%;
+}
+
+footer {
+  background-color: #2a8827;
+}
+
+.footer__container a {
+  color: black;
+}
+
+.footer__container a i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.footer__container {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.form__file_text {
+  opacity: 0.65;
+  font-size: 0.85rem;
+}
+.main__contact__form div {
+  padding: 0.25rem 0 0.25rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.main__apply__form form {
+  display: flex;
+  flex-direction: column;
+}
+.main__apply__form {
+  display: flex;
+  flex: 1;
+  column-gap: 12rem;
+}
+.main__apply__form div {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem 0 0.25rem 0;
+}
+.main__apply__form__img {
+  width: 20%;
+  height: 20%;
+}
+.main__apply__form__img img {
+  width: 100%;
+  height: 100%;
+}
+input {
+  width: 20rem;
+}
+.main__apply__form__file input {
+  border: 1px solid #848493;
+  background-color: white;
+}
+input[type="submit"] {
+  width: 5rem;
+  height: 2rem;
+  margin: 0.25rem 0 0.25rem 0;
+}
+
+textarea {
+  width: 20rem;
+  height: 10rem;
+}
+@media (max-width: 768px) {
+  main {
+    background-color: #e4fde1;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .nav__list {
+    visibility: hidden;
+  }
+  .img__presentation img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main__contact {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    column-gap: 12rem;
+  }
+}
