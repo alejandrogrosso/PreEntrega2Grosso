@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
       rel="shortcut icon"
       href="../images/favicon.png"
       type="image/x-icon"
@@ -23,116 +29,175 @@
     />
     <title>Contacto</title>
   </head>
-  <body>
-    <header>
-      <div class="header__container">
-        <div class="logo">
-          <a href="../index.html">
+  <body class="row">
+    <header class="col-12">
+      <nav
+        class="navbar navbar-expand-lg shadow navbar-dark fixed-top bg-success"
+      >
+        <div class="container-fluid d-flex flex-row">
+          <a class="navbar-brand mt-2 mt-lg-0 col-6" href="../index.html">
             <img
+              class="logo"
               src="../images/logo_transparent.png"
               alt="Logo transparente"
-              class="nav__image"
             />
           </a>
-          <h1>Estudio Contable</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item px-4">
+                <a
+                  class="nav-link text-white fw-bolder"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link text-white fw-bolder" href="./services.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link text-white fw-bolder" href="./team.html"
+                  >Equipo</a
+                >
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link text-white fw-bolder" href="./apply.html"
+                  >Postulate</a
+                >
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link text-white fw-bolder" href="./contact.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="../index.html">Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./services.html">Servicios</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./team.html">Equipo</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./apply.html">Postulate</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./contact.html">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </header>
-    <section class="main__section">
-      <main>
-        <div class="main__section">
-          <h2>Contacto</h2>
-          <div class="main__contact">
-            <section class="main__contact__form">
-              <h3>Formulario de contacto</h3>
-              <form action="contact.html">
-                <div>
-                  <label for="name">Nombre, Apellido o Razón social</label>
+    <main class="col-12">
+      <section class="container intro-section main__section mb-4">
+        <div class="col-lg-12 col-md-12 mb-md-0">
+          <h2 class="my-3">Contacto</h2>
+          <section class="row">
+            <form class="col-12 col-sm-6" action="apply.html">
+              <div class="row">
+                <div class="mb-3">
+                  <label for="name" class="form-label"
+                    >Nombre, Apellido o Razón social</label
+                  >
                   <input
                     type="text"
-                    name="name"
+                    class="form-control"
                     id="name"
                     placeholder="Ingrese su nombre, apellido o razón social"
                   />
                 </div>
-                <div>
-                  <label for="email">Direccion de email</label>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Direccion de email</label
+                  >
                   <input
-                    type="text"
-                    name="email"
+                    type="email"
+                    class="form-control"
                     id="email"
                     placeholder="Ingrese su correo"
                   />
                 </div>
-                <div>
-                  <label for="email">Teléfono</label>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Teléfono</label>
                   <input
-                    type="text"
-                    name="phone"
+                    type="tel"
+                    class="form-control"
                     id="phone"
                     placeholder="Ingrese su teléfono"
                   />
                 </div>
-                <div>
-                  <label for="message">Mensaje</label>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Mensaje</label>
                   <textarea
-                    type="tex"
-                    name="message"
+                    class="form-control"
                     id="message"
+                    rows="4"
                     placeholder="Escriba un mensaje"
                   ></textarea>
                 </div>
-                <input type="submit" value="Enviar" />
-              </form>
-            </section>
-            <section class="main__localization">
+                <div class="mb-3">
+                  <button class="btn btn-primary col-3" type="submit">
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="col-sm-6">
               <h3>Ubicacion</h3>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11787.924705702317!2d-58.478886654949676!3d-34.55239051606857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb696ab5cb4ed%3A0x887c745720a0e9b6!2sParque%20Saavedra!5e0!3m2!1ses!2sar!4v1666571780585!5m2!1ses!2sar"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-              <p>Av. Direccion 1234</p>
-              <p>C.A.B.A - CP 1478</p>
-              <p>(011) 4444-4444</p>
-              <a href="mailto:info@estudiocontable.com.ar"
+              <div class="embed-responsive embed-responsive-16by9 w-100 h-50">
+                <iframe
+                  class="embed-responsive-item w-100 h-100"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11787.924705702317!2d-58.478886654949676!3d-34.55239051606857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb696ab5cb4ed%3A0x887c745720a0e9b6!2sParque%20Saavedra!5e0!3m2!1ses!2sar!4v1666571780585!5m2!1ses!2sar"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <p class="mt-4 mb-0">Av. Direccion 1234</p>
+              <p class="mt-0 mb-0">C.A.B.A - CP 1478</p>
+              <p class="mt-0 mb-0">(011) 4444-4444</p>
+              <a
+                class="mt-0 mb-4 text-decoration-none"
+                href="mailto:info@estudiocontable.com.ar"
                 >info@estudiocontable.com.ar</a
               >
-            </section>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="col-12 footer pt-3 bg-success mt-auto p-2">
+      <div class="footer-sm text-white">
+        <div class="container">
+          <div class="row py-4 text-center text-white">
+            <div class="col-lg-12 col-md-12 mb-md-0">
+              Av. Dirección 1234 C.A.B.A - CP.1478 - (011)4444-4444
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <a href="http://facebook.com" target="_blank"
+                ><i class="fab fa-facebook text-white mx-2"></i
+              ></a>
+              <a href="http://twitter.com" target="_blank"
+                ><i class="fab fa-twitter text-white mx-2"></i
+              ></a>
+              <a href="http://instagram.com" target="_blank"
+                ><i class="fab fa-instagram text-white mx-2"></i
+              ></a>
+            </div>
           </div>
         </div>
-      </main>
-    </section>
-    <footer>
-      <div class="footer__container">
-        <p>Av. Dirección 1234 C.A.B.A - CP.1478 - (011)4444-4444</p>
-        <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
-        <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
-        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
