@@ -1,14 +1,17 @@
 html {
   height: 100%;
 }
+
 .logo {
   max-width: 15%;
   min-width: 55px;
   height: auto;
 }
+
 .main__section {
   margin-top: 12rem;
 }
+
 body {
   --bs-body-bg: #e4fde1;
   height: 100%;
@@ -22,7 +25,6 @@ body {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   cursor: pointer;
 }
-
 .button__send:after,
 .button__send:before {
   content: "";
@@ -33,7 +35,6 @@ body {
   opacity: 0;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-
 .button__send:after {
   width: 30px;
   height: 1px;
@@ -41,7 +42,6 @@ body {
   transform: translateX(-3px);
   margin-top: 0px;
 }
-
 .button__send:before {
   content: "";
   transform: rotate(-135deg) translateX(50%);
@@ -52,13 +52,13 @@ body {
   border-bottom: 1px solid white;
   margin-top: -1px;
 }
-
 .button__send:hover {
   padding: auto 60px auto 15px;
 }
-
-.button__send:hover::after,
-.button__send:hover::before {
+.button__send:hover:after,
+.button__send:hover:before {
   opacity: 1;
   right: 15px;
 }
+
+/*# sourceMappingURL=style.css.map */
