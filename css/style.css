@@ -1,3 +1,11 @@
+.general_background {
+  background-color: #e4fde1;
+}
+
+.general_background {
+  background-color: #e4fde1;
+}
+
 .button__send {
   background: #0c63fd;
   border: 0;
@@ -40,6 +48,10 @@
   right: 15px;
 }
 
+.general_background {
+  background-color: #e4fde1;
+}
+
 html {
   height: 100%;
 }
@@ -57,6 +69,18 @@ html {
 body {
   --bs-body-bg: #e4fde1;
   height: 100%;
+}
+
+.calculator_img {
+  size: 50%;
+}
+
+.line {
+  width: 60%;
+}
+
+.line__team {
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
