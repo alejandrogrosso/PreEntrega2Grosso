@@ -1,0 +1,4 @@
+@mixin maxSizes($maxWidth, $maxHeight) {
+  max-width: $maxWidth;
+  min-width: $maxHeight;
+}

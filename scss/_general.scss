@@ -1,0 +1,19 @@
+@import "_mixin";
+@import "_colors";
+html {
+  height: 100%;
+}
+.logo {
+  @include maxSizes(15%, 55px);
+  height: auto;
+}
+.main__section {
+  margin-top: 12rem;
+}
+body {
+  --bs-body-bg: #e4fde1;
+  height: 100%;
+}
+.calculator_img {
+  size: 50%;
+}
